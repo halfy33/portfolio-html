@@ -1,0 +1,38 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Hanlding Updates
+-----------------------------------------------------------------*/
+
+.ol_margin {
+	margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
+.li_margin {
+	margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.Claroty {
+	max-height : 200px;
+	width : auto;
+	border-radius: 10px;
+	transition: filter 0.5s ease; /* Transition douce */
+}
+
+.Claroty:hover {
+	filter: brightness(75%); /* Assombrir l'image au survol */
+  }
+
+.foot {
+	max-height : 175px;
+	width : auto;
+	border-radius: 10px;
+	transition: filter 0.5s ease; /* Transition douce */
+}
+
+.foot:hover {
+	filter: brightness(1.5); /* Assombrir l'image au survol */
+}
