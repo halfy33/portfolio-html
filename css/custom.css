@@ -5,10 +5,10 @@
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
 
-.ol_margin {
+/*.ol_margin {
 	margin-top: 5px !important;
     margin-bottom: 5px !important;
-}
+}*/
 
 .li_margin {
 	margin-top: 10px !important;
@@ -16,6 +16,16 @@
 }
 
 .Claroty {
+	margin-left:auto;
+	margin-right: auto;
+	max-height : 200px;
+	width : auto;
+	border-radius: 10px;
+	transition: filter 0.5s ease; /* Transition douce */
+}
+.sub_claroty {
+	margin-left:280px;
+	margin-right: auto;
 	max-height : 200px;
 	width : auto;
 	border-radius: 10px;
@@ -35,4 +45,27 @@
 
 .foot:hover {
 	filter: brightness(1.5); /* Assombrir l'image au survol */
+}
+
+
+.subtitle {
+	text-decoration: underline;
+	font-size: larger;
+	max-height: 15px;
+	margin-top:25px
+
+}
+
+.cv {
+	max-width: 100%;
+	max-height: auto;
+}
+
+.sub_foot {
+	margin-left:280px;
+	margin-right: auto;
+	max-height : 200px;
+	width : auto;
+	border-radius: 10px;
+	transition: filter 0.5s ease; /* Transition douce */
 }
