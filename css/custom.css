@@ -104,3 +104,22 @@
 	transition: filter 0.5s ease; /* Transition douce */
 }
 
+.sub_jde3{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10%;
+	float: left;
+	shape-outside: margin-box;
+	margin: 0 20px 5px 0;
+	transition: filter 0.5s ease; /* Transition douce */
+}
+
+.card-group>.card{
+	flex: 2 0 40%;
+	margin-top: 50px;
+}
+
+.titre2 {
+	margin-top: 50px;
+}
