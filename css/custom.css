@@ -69,3 +69,27 @@
 	border-radius: 10px;
 	transition: filter 0.5s ease; /* Transition douce */
 }
+
+.sub_jde{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	float: left;
+	shape-outside: margin-box;
+	margin: 0 20px 5px 0;
+	transition: filter 0.5s ease; /* Transition douce */
+}
+
+.container_jde{
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0);
+}
+
+.container_jde p {
+	line-height: 200px;
+}
+

@@ -3342,6 +3342,9 @@ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-prima
 .btn-primary {
   background-color: #20c997;
   border-color: #20c997;
+  margin-top: auto;
+  margin-bottom: 10px;
+  padding: 1em;
 }
 
 .btn-primary:hover {
