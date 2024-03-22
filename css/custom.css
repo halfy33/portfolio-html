@@ -93,3 +93,14 @@
 	line-height: 200px;
 }
 
+.sub_jde2{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	float: right;
+	shape-outside: margin-box;
+	margin: 0 20px 5px 0;
+	transition: filter 0.5s ease; /* Transition douce */
+}
+

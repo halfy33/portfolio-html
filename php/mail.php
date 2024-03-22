@@ -27,8 +27,8 @@ $toEmail = "yanis@yginfo.fr"; // Replace Your Email Address
   // Sender's Email
 --------------------------------------------- */
 
-$fromEmail = "no-reply@website.com";  // Replace Company's Email Address (preferably currently used Domain Name)
-$fromName = "Company Name"; // Replace Company Name
+$fromEmail = "contact@yginfo.fr";  // Replace Company's Email Address (preferably currently used Domain Name)
+$fromName = "yginfo"; // Replace Company Name
 
 
 /* --------------------------------------------
@@ -36,7 +36,7 @@ $fromName = "Company Name"; // Replace Company Name
   --------------------------------------------- */
 
 // Add this only if you want to use Google reCaptcha with your Contact Forms.
-$recaptcha_secret = 'YOUR_RECAPTCHA_SECRET_KEY'; // Your Google reCaptcha Secret
+$recaptcha_secret = '6Lf1OKEpAAAAAM6D0X7FR-j6Zoez_eRS82rixHmd'; // Your Google reCaptcha Secret
 
 
 /* --------------------------------------------
