@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="images/yg_icone.png" rel="icon" />
+<title>Colos Projet</title>
+<meta name="description" content="Présentation de mon portfolio et de mon avancée dans le monde de l'informatique.">
+<meta name="author" content="yginfo.fr">
+
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<!-- Owl Carousel -->
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+
+<body>
+    <section id="services" class="section bg-light">
+        <div class="container px-lg-5"> 
+          <!-- Heading -->
+          <div class="position-relative d-flex text-center mb-5">
+            <h2 class="text-24 text-light opacity-4 text-uppercase fw-600 w-100 mb-0">Projet</h2>
+            <p class="text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0">Claroty<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+          </div>
+    <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <div class="row">
+            <div class="col-md-11">
+                <div class="featured-box style-3 mb-5">
+          <!--<div class="featured-box-icon text-primary bg-white shadow-sm rounded"> <i class="fas fa-palette"></i> </div>-->
+                    <a href ="index.html#services"><img src="images/claroty_img.jpg" class="sub_jde3" alt="image_claroty"></a>
+                    <p class="mb-0">Claroty est une plateforme de sécurité industrielle conçue pour protéger les réseaux et les systèmes de contrôle industriels (ICS) des cybermenaces. 
+                      Elle offre une visibilité complète sur les réseaux industriels, permettant aux entreprises de détecter et de répondre aux menaces potentielles, tout en garantissant 
+                      la continuité des opérations critiques.
+                    </p> </br>
+                    </div>
+
+                    <div class="featured-box style-3 mb-5">
+                        <h6 class="subtitle">Les fonctionnalités de claroty</h6>
+                    <p class="mb-1">
+                      <ol>
+                        <li>
+                          <b>Détection des menaces avancées  :</b> Claroty utilise des techniques avancées de détection des menaces pour identifier les activités malveillantes et les comportements suspects sur les réseaux industriels. Il analyse le trafic réseau en temps réel pour détecter les signes de compromission et d'activité anormale. 
+                        </li>
+                        <li>
+                          <b>Visibilité complète sur les réseaux industriels  :</b> La plateforme Claroty offre une visibilité complète sur les réseaux industriels, y compris les équipements de production, les systèmes de contrôle industriels et les appareils IoT. Cela permet aux entreprises de surveiller efficacement leur infrastructure et d'identifier les points faibles potentiels.
+                        </li>
+                        <li>
+                          <b>Analyse de risques et de vulnérabilités  :</b> Claroty évalue les risques et les vulnérabilités des réseaux industriels en identifiant les points d'entrée potentiels pour les cyberattaques. Il fournit des rapports détaillés sur les vulnérabilités découvertes et recommande des mesures correctives pour renforcer la sécurité.
+                        </li>
+                        <li>
+                          <b>Réponse automatisée aux incidents  :</b> En cas de détection d'une menace, Claroty peut déclencher des actions de réponse automatisées pour contenir et neutraliser la menace. Cela permet aux entreprises de réagir rapidement aux incidents de sécurité et de limiter les dommages potentiels.
+                        </li>
+                        <li>
+                          <b>Intégration avec d'autres solutions de sécurité  :</b> Claroty s'intègre avec d'autres solutions de sécurité, telles que les pare-feu, les systèmes de gestion des événements et des informations de sécurité (SIEM) et les solutions de détection d'intrusion, pour fournir une protection complète de l'infrastructure industrielle. 
+                        </li>
+                      </ol>
+                    </p>
+                    </div>
+                    <div class="featured-box style-3 mb-5">
+                    <h6 class="subtitle">L'implémentation</h6>
+                    <p class="mb-2">
+                      <ul>
+                        <li>Réception de tous les serveurs claroty préconfigurer par claroty</li>
+                        <li>Déploiement de chaque serveur dans chaque baie informatique contenant des access switches </li>
+                        <li>Reliage du serveur claroty avec les access switches sur le port span</li>
+                        <li>Mettre en place l'IP de l'ILO pour la prise à distance d'Accenture notre infogérant</li>
+                        <li>On allume le serveur claroty, on lui attribue une ip puis on se connecte à l'interface web de claroty</li>
+                      </ul>
+                    </p>
+                    </div>
+                    <div class="featured-box style-3 mb-5">
+                      <h6 class="subtitle">La configuration des assets</h6>
+                      <p class="mb-3">
+                        Une fois l'implémentation terminée, nous avons donc eu sur l'interface web tous les assets connectés dans l'usine qui remontaient. 
+                        Cependant il fallait configurer les vlans et associer à chaque asset son vlan grâce à l'IP. C'est pourquoi après le travail d'implémentation il y a eu un gros travail de tri.
+                        En effet on a dû récréer notre réseau à travers le claroty pour que la séparation des assets soient cohérentes et lisibles. Pour qu'ensuite les bonnes décisions soient prises pour 
+                        réagir face à des assets pas mis à jour. 
+                        
+
+                      </p>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+          
+
+</body>
