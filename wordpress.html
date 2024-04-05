@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="images/yg_icone.png" rel="icon" />
+<title>Wordpress</title>
+<meta name="description" content="Présentation de mon portfolio et de mon avancée dans le monde de l'informatique.">
+<meta name="author" content="yginfo.fr">
+
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<!-- Owl Carousel -->
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+
+<body>
+    <section id="services" class="section bg-light">
+        <div class="container px-lg-5"> 
+          <!-- Heading -->
+          <div class="position-relative d-flex text-center mb-5">
+            <h2 class="text-24 text-light opacity-4 text-uppercase fw-600 w-100 mb-0">Ecole</h2>
+            <p class="text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0">Installation wordpress avec nginx<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+          </div>
+    <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <div class="row">
+            <div class="col-md-11">
+                <div class="featured-box style-3 mb-5">
+          <!--<div class="featured-box-icon text-primary bg-white shadow-sm rounded"> <i class="fas fa-palette"></i> </div>-->
+                    <a href ="index.html#services"><img src="images/projects/wordpress.jpg" class="sub_jde3" alt="image_claroty"></a>
+                    <h6 class="subtitle">La configuration</h6>
+                    <p class="mb-0">
+                        <p> Grâce à cette procédure vous allez pouvoir à partir d’une Debian 11 vierge, héberger et créer votre site web WordPress via le serveur web Nginx. Il faut savoir que grâce à cette procédure nous allons utiliser mariaDB server qui sera le serveur hébergeant notre base de données, mariaDB client pour intéragir avec notre serveur, 
+                            Php pour le langage qui gère le site web, et php-fpm qui gère le php pour nginx.</p>
+                        <p><u>Nous avons besoin de certains pré requis :</u> </p>
+                        <ol>
+                            <li>Se mettre en root : 
+                                <b>su -</b>
+                                </li>
+                            <li>Update sa debian : 
+                                <b>apt update && apt upgrade</b>
+                                </li>
+                            <li>Installer Nginx,MariaDB (server,client), PHP et PHP-FPM : 
+                                <b>Apt install nginx mariadb-server mariadb-client php php-fpm</b>
+                                </li>
+                            <li>Télécharger WordPress : 
+                                <b>wget https://fr.wordpress.org/latest-fr_FR.zip</b>
+                                </li>
+                        </ol>
+                        
+                    </p> </br>
+                    </div>
+
+                    <div class="featured-box style-3 mb-5">
+                       
+                        <h6 class="subtitle">Procédure</h6>
+                    <p class="mb-1">
+                        <ul>
+                            <li>Nous allons vérifier le status de nginx, il faut qu’il soit vert (actif « running »)<b> systemctl status nginx.service</b></li>
+                            <li>Nous allons nous rendre dans les fichiers du serveur web nginx <b> cd /etc/nginx/sites-enabled</b></li>
+                            <li>Ici nous avons un fichier « default », nous allons le copier à côté<b> cp default wordpress</b></li>
+                            <li>On se rend ensuite dans le fichier qui sera afficher dans le web<b> cd /var/www/</b></li>
+                            <li>On va créer un dossier qui contiendra l’application wordpress <b>mkdir wordpress</b></li>
+                            <li>On déplace le dossier wordpress que l’on a télécharger ici et on le dezipe<b> mv wordpress /var/www/wordpress</b></li>
+                            <li><b>tar -xvf wordpress ou unzip wordpress</b></li>
+                            <li>On n’oublie pas de donner les droits en écriture à l’utilisateur www-data sur le dossier créer dans <b>/var/www/wordpress : chown www-data:www-data -R .</b></li>
+                            
+                        </ul>
+                        <p><u>La partie base de données</u></p>
+                            <img src="images/wordpress1.png">
+                            <img src="images/wordpress2.png">
+                            <img src="images/wordpress3.png">
+                            <img src="images/wordpress4.png">
+                        
+                        </br>
+                    </br>
+
+                        <p><u>Configuration nginx</u></br>
+                        On remplit la configuration de la même manière que le screen ci-dessous</br>
+                        <b>nano /etc/nginx/sites-enabled/wordpress</b>
+                    </p>
+                        <img src="images/wordpress5.png">
+                        <p>On fait ensuite <b>systemctl reload (ou restart) nginx.service</b></br>
+                        Puis on tape l'url que l'on a mis dans le fichier de conf nginx dans le navigateur</p>
+                        
+                    </p>
+                    </div>
+
+                    <div class="featured-box style-3 mb-4">
+                        <h6 class="subtitle">Installation de Wordpress</h6>
+                    <p class="mb-1">
+                    On passe ensuite à l'installation de wordpress via le navigateur :   
+                    </p></br>
+
+                    <p><b>Etape 1</b></br>
+                    cliquer sur "c'est parti!"</p>
+                    <img src="images/wordpress6.png">
+                    
+                    <p><b>Etape 2</b></br>
+                    Remplir les champs que l'on a créé dans la base de données</p>
+                    <img src="images/wordpress7.png">
+
+                    <p><b>Etape 3</b></br>
+                    Lancer l'installation</p>
+                    <img src="images/wordpress8.png">
+
+                    <p><b>Etape 5</b></br>
+                    Entrer les informations que vous voulez avec un mot de passe sécurisé</p>
+                    <img src="images/wordpress9.png">
+
+                    <p><b>Etape 6</b></br>
+                    Cliquer sur se connecter</p>
+                    <img src="images/wordpress10.png">
+
+                    <p><b>Etape 7</b></br>
+                    Se connecter avec les identifiants précédemment créés</p>
+                    <img src="images/wordpress11.png">
+                  
+                    <p>Fin de l'installation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+          
+
+</body>

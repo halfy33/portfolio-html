@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="images/yg_icone.png" rel="icon" />
+<title>Printing project</title>
+<meta name="description" content="Présentation de mon portfolio et de mon avancée dans le monde de l'informatique.">
+<meta name="author" content="yginfo.fr">
+
+<!-- Web Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<!-- Owl Carousel -->
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+</head>
+
+<body>
+    <section id="services" class="section bg-light">
+        <div class="container px-lg-5"> 
+          <!-- Heading -->
+          <div class="position-relative d-flex text-center mb-5">
+            <h2 class="text-24 text-light opacity-4 text-uppercase fw-600 w-100 mb-0">Entreprise</h2>
+            <p class="text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0">Projet impression<span class="heading-separator-line border-bottom border-3 border-primary d-block mx-auto"></span> </p>
+          </div>
+    <div class="row">
+        <div class="col-lg-11 mx-auto">
+          <div class="row">
+            <div class="col-md-11">
+                <div class="featured-box style-3 mb-5">
+          <!--<div class="featured-box-icon text-primary bg-white shadow-sm rounded"> <i class="fas fa-palette"></i> </div>-->
+                    <a href ="index.html#services"><img src="images/projects/imprimante_timis.png" class="sub_jde3" alt="image_claroty"></a>
+                    <h6 class="subtitle">Le système d'impression</h6>
+                    <p class="mb-0">
+                        <p> </p>
+                        <b>PRS  :</b> Cette application représente notre MES qui est un logiciel de pilotage de la production. Beaucoup d'action du process passe par ce dernier et les autres applications autour récupèrent des informations via PRS. Application groupe géré par CGI 
+                        <p><b>Trace IT  :</b> Voici le moteur du système d'impression, le logiciel contenant tout les pilotes pour pouvoir imprimer à partir de différentes modèles d'imprimante. Dans notre cas nous utilisons les pilotes colos et nicelabel. C'est un gestionnaire d'impression, 
+                            où toutes les impressions de lignes y sont regroupés, tous les layout, l'historique d'impression, les différentes sources de données... C'est un logiciel créé et maintenu par Novexx. </p>
+                        </b> 
+                        <b>Colos :</b> Logiciel pouvant faire tout le travail de Trace IT mais nous l'utilisons uniquement pour les marjem imaje, c'est-à-dire les imprimantes laser. (Configurations, maintenances...)
+                        <p><b>Nicelabel :</b> Logiciel permettant de gérer les imprimantes Limitronics jet d'encre</p>
+                        <p><u>Schéma process impression</u></p>
+                        <img src="images/impression.png">
+                    </p> </br>
+                    </div>
+
+                    <div class="featured-box style-3 mb-5">
+                        <a href ="index.html#services"><img src="images/projects/novex.jpeg" class="sub_jde" alt="image_claroty"></a>
+                        <h6 class="subtitle">Trace IT</h6>
+                    <p class="mb-1">
+                        <p>Comme évoqué précédemment Trace IT est notre logiciel de gestionnaire d'impression. J'ai dû plusieurs fois intervenir sur ce logiciel dans le but de débloquer certains problèmes, où alors d'implémenter de nouvelles imprimantes, de nouveaux masques d'impression. Il
+                            faut savoir que tout démarre avec la création d'un OF via SAP, envoyé via un MATMAS à PRS et trace-it. Entre-eux ils s'échangent un message sous forme de fichier XML. Grâce à tous ces messages le process peut continuer et Trace IT peut transférer les bon messages aux bonnes imprimantes sur les bonnes lignes. </p>
+                        
+                            <img src="images/traceit.png">
+                            <img src="images/traceit2.png">
+                        
+                    </p> </br>
+                    </div>
+
+                    <div class="featured-box style-3 mb-4">
+                        <a href ="index.html#services"><img src="images/projects/print.jpeg" class="sub_jde2" alt="image_claroty"></a>
+                        <h6 class="subtitle">Gestion des impressions laser et jet d'encre</h6>
+                    <p class="mb-1">
+                        Sur les lignes de productions il y a deux sortes d'imprimantes pour deux supports différents. Les laser pour les petites boites contenant les capsules de cafés et les grosses boites contenant les petites boites. (CU et fardes)
+                        Pour ces deux types d'imprimantes il existe des masques particuliers à appliquer en fonction du client et du nombre de capsules contenue dans la boite. En grande partie ses masques sont intégrés de manières automatique à travers trace it et envoyés aux imprimantes.  
+                    </p></br>
+                    <p><b>Masque Timis</b>
+                    <img src="images/mask_timis.png">
+                    </p>
+                    <p><b>Masque Markem</b></p>
+                    <img src="images/laser_mask.png">
+                    </div>
+                    
+                    <div class="featured-box style-3 mb-3">
+                    <a href ="index.html#services"><img src="images/projects/lazer_mark.jpg" class="sub_jde3" alt="image_claroty"></a>
+                    <h6 class="subtitle">Les imprimantes</h6>
+                    <p class="mb-1">
+                        Nous avons donc deux styles d'impression de ligne qui se complètent parfaitement. Dans les machines schubert nous avons les markem laser, et en sortie de schubert nous avons les timis limitronics.
+                        Celle-ci sont reliées via des câbles rj45 sur des prises directement reliées au bon switch. Elles ont un vlan particulier (275 packaging). Elles reçoivent donc les informations (ordre de fabrication, articles, dates...) en automatique via les applications citées ci-dessus.
+
+                    </p>
+
+                    <div class="featured-box style-3 mb-3">
+                    <a href ="index.html#services"><img src="images/projects/industrie4.jpg" class="sub_jde2" alt="image_claroty"></a>
+                    <h6 class="subtitle">La maintenance de l'impression</h6>
+                    <p class="mb-1">
+                        J'ai eu différents projets à réaliser sur l'impression, premièrement j'ai du refaire un visio du système d'impression pour pouvoir le comprendre et l'appréhender.
+                        J'ai ensuite du aider les utilisateurs lors de pannes inhabituelles comme une carte electronique qui avait grillé à l'interieur compromettant une base de données.
+                        J'a ensuite pu passer au problème d'équilibrage entre vitesse de tapis des schubert et réglage du dwell time (temps que reste le laser sur la boite) pour calibrer l'impression.
+                        L'impression m'a permis de découvrir les modes de fonctionnement d'une usine car sans cela une usine ne peut plus produire c'est une système très important donc très protégé.
+
+                    </p>
+                        </div>
+                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+          
+
+</body>
